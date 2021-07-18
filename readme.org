@@ -1,0 +1,19 @@
+* 概要
+rdflibでturtleファイルを読み込み、pydotでsvg画像を出力するデモ。
+
+rdflilb.tools.rdf2dotでは、出力形式がハードコードされている。
+上記をオーバーライドして作成しても良い。
+
+* サンプル
+
+#+BEGIN_SRC sh
+python main.py -i ./data/donna.ttl -o ./data/donna.svg
+#+END_SRC
+
+[[file:data/donna.svg]]
+
+元のRDF(donna.ttl)は、rdflibのサンプルである（[[https://rdflib.readthedocs.io/en/stable/gettingstarted.html][Getting started with RDFLib — rdflib 5.0.0 documentation]]）。
+
+色合いはtab10から選んだ（[[https://matplotlib.org/stable/tutorials/colors/colormaps.html][Choosing Colormaps in Matplotlib — Matplotlib 3.4.2 documentation]]）。
+
+フォントにはHackGen35を用いている（[[https://github.com/yuru7/HackGen][yuru7/HackGen： HackGen is Japanese programming font which is a composed of Hack and GenJyuu-Gothic.]]）。
