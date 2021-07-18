@@ -6,10 +6,29 @@ rdflilb.tools.rdf2dotでは、出力形式がハードコードされている�
 
 * サンプル
 
+コマンド例
 #+BEGIN_SRC sh
 python main.py -i ./data/donna.ttl -o ./data/donna.svg
 #+END_SRC
 
+入力ファイル(donna.ttl)
+#+BEGIN_SRC ttl
+@prefix : <http://example.org/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/donna> a foaf:Person ;
+    foaf:mbox <mailto:donna@example.org> ;
+    foaf:name "Donna Fales" ;
+    foaf:nick "donna"@ed .
+
+<http://example.org/edward> a foaf:Person ;
+    foaf:mbox <mailto:e.scissorhands@example.org> ;
+    foaf:name "Edward Scissorhands" ;
+    foaf:nick "ed"^^xsd:string .
+#+END_SRC
+
+出力ファイル(donna.svg)
 [[file:data/donna.svg]]
 
 
