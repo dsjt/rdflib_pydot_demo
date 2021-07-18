@@ -40,10 +40,3 @@ class Mapping(object):
 
     def __str__(self):
         return "\n".join([f"{k}:{v}" for k, v in self.mapping.items()])
-
-
-def nodename(identifier):
-    return "node"+str(identifier)
-
-def edgename(identifier):
-    return "edge"+str(identifier)
