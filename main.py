@@ -10,6 +10,7 @@ import html
 
 import logging
 logger = logging.getLogger(__name__)
+logging.basicConfig(level=logging.ERROR)
 
 def nodename(identifier):
     return "node"+str(identifier)
