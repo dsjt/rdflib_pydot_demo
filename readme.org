@@ -4,6 +4,20 @@ rdflibでturtleファイルを読み込み、pydotでsvg画像を出力するデ
 rdflilb.tools.rdf2dotでは、出力形式がハードコードされている。
 上記をオーバーライドして作成しても良い。
 
+* 用法
+#+BEGIN_SRC txt
+usage: main.py [-h] [-i INPUT] [-o OUTPUT]
+
+RDF と pydotの連携
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -i INPUT, --input INPUT
+                        入力ファイル(.ttl)
+  -o OUTPUT, --output OUTPUT
+                        出力ファイル(.svg)
+#+END_SRC
+
 * サンプル
 
 コマンド例
