@@ -50,3 +50,6 @@ python main.py -i ./data/donna.ttl -o ./data/donna.svg
 - 元のRDF(donna.ttl)は、rdflibのサンプルである（[[https://rdflib.readthedocs.io/en/stable/gettingstarted.html][Getting started with RDFLib — rdflib 5.0.0 documentation]]）。
 - 色はtab10より選択した（[[https://matplotlib.org/stable/tutorials/colors/colormaps.html][Choosing Colormaps in Matplotlib — Matplotlib 3.4.2 documentation]]）。
 - フォントにはHackGen35を用いている（[[https://github.com/yuru7/HackGen][yuru7/HackGen： HackGen is Japanese programming font which is a composed of Hack and GenJyuu-Gothic.]]）。
+
+* 課題
+- 画像上のラベルが、ノードの形状から飛び出ることがある
