@@ -24,6 +24,9 @@ class Mapping(object):
             self.rev_map[self.mapping[obj]] = obj
         return self.mapping[obj]
 
+    def __contains__(self, obj):
+        return obj in self.mapping
+
     def __call__(self, obj):
         """
         obj -> node
