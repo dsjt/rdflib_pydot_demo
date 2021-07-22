@@ -52,7 +52,11 @@ python main.py -i ./data/donna.ttl -o ./data/donna.svg
 - フォントにはHackGen35を用いている（[[https://github.com/yuru7/HackGen][yuru7/HackGen： HackGen is Japanese programming font which is a composed of Hack and GenJyuu-Gothic.]]）。
 
 * バージョン
-python==3.9.2, pydot==1.4.2, rdflib==5.0.0で動作確認
+以下で動作確認
+
+- python==3.9.2
+- pydot==1.4.2
+- rdflib==5.0.0
 
 * 課題
 - 画像上のラベルが、ノードの形状から飛び出ることがある
